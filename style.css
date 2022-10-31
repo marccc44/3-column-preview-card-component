@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 920px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+article {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+img {
+    margin-bottom: 45px;
+}
+
+article:nth-child(1) {
+    background-color: #E28625;
+}
+
+article:nth-child(1) a {
+    color: #E28625;
+}
+
+article:nth-child(2) {
+    background-color: #006971;
+}
+
+article:nth-child(2) a {
+    color: #006971;
+}
+
+article:nth-child(3) {
+    background-color: #004140;
+}
+
+article:nth-child(3) a {
+    color: #004140;
+}
+
+a {
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 50px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: transparent;
+    border: 3px white solid;
+    transition: ease-in-out 0.2s;
+    color: white!important;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        height: 100%;
+    }
+    
+    section {
+        margin: 20px;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    
+    article {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    img {
+        margin-bottom: 45px;
+    }
+    
+    a {
+        margin-top: 40px;
+        padding: 20px 30px;
+        background-color: white;
+        border-radius: 50px;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+    }
+    
+    a:hover {
+        background-color: transparent;
+        border: 3px white solid;
+        transition: ease-in-out 0.2s;
+        color: white!important;
+    }
+    
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.5rem;
+    }
